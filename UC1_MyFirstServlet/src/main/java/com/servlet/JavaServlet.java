@@ -7,14 +7,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+//Create a class JavaServlet to extend HttpServlet class
 @WebServlet("/FirstServlet")
 public class JavaServlet extends HttpServlet {
 
+    //Create a doGet to override it
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        out.println("<h3>Hello World Anchal My First Servlet!</h3>");
+        //Print the massage
+        out.println("<h3>Hello World Sunil Meena My First Servlet!</h3>");
         out.close();
     }
 }
